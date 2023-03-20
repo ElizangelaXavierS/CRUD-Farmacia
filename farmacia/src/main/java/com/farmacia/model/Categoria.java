@@ -24,7 +24,7 @@ public class Categoria {
 	
 	@NotNull(message = "O atributo nome é obrigatório")
 	private String nome;
-	@OneToMany(mappedBy = "categora", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
 	private List<Produto> produto;
 
